@@ -157,25 +157,125 @@ p #rating{
 
 }
 /* MOBILE STYLING */
-@media screen and (max-width: 600px;){
-  div{
-    border:solid 1px black;
-    margin-top:10px;
-    width:100%;
+@media screen and (max-width: 764px){
+  body{
+    font-family: Spartan;
   }
   .container{
     width:90%;
     min-height:90vh;
     display:flex;
     flex-direction:column;
-    align-items: center;
-    align-content: center;
+    margin:auto;
+    margin-top:50px;
   }
   .upper,.lower{
     display:flex;
     flex-direction: column;
+    margin-top:20px;
+  }
+  #upper-left{
+    margin:auto;
+    text-align:center;
+    color:hsl(300, 43%, 22%);
+  }
+  #upper-right{
+    margin:auto;
+    width:100%;
+    color:hsl(300, 43%, 22%);
+    font-weight: bolder;
+    margin-top:-30px;
   }
   h2{
-    margin-top:70px;
+    font-weight:500px;
+    font-size: 40px;
+    width:80%;
+    text-align:center; 
+    /* padding-left:120px; */
+    margin:auto;
+    margin-bottom:20px;
+  }
+  p#upper{
+    width:80%;
+    text-align:center;
+    font-size:15px;
+    /* padding-left:60px; */
+    margin:auto;
+    margin-bottom:80px;
+  }
+  #rating1,#rating2,#rating3{
+    width: 100%;
+    height: 40px;
+    padding:10px 0;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 7px;
+    margin:5px auto;
+    text-align: center;
+  }
+  span.rating{
+    display: block;
+    color:;
+  }
+  .checked{
+    color:yellow;
+  }
+  .lower-divs{
+    border-radius:7px;
+    background-color:hsl(300, 43%, 22%);
+    margin:5px 0;
+    color:white;
+    font-size: 10px;
+    padding:30px;
+  }
+  .img{
+    width:15%;
+    height:35px;
+    border-radius: 50%;
+    margin-right:15px;
+    display:inline-block;
+  }
+  #irene{
+    /* width:20%;
+    height:35px; */
+    /* border-radius: 50%; */
+    background-image:url('./images/image-irene.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #colton{
+    /* width:20%;
+    height:35px; */
+    /* border-radius: 50%; */
+  
+    background-image:url('./images/image-colton.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #anne{
+    /* width:20%;
+    height:35px; */
+    /* border-radius: 50%; */
+    background-image:url('./images/image-anne.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .id{
+    display:flex;
+    flex-direction:row;
+  }
+  .status{
+    color:hsl(333, 80%, 67%);
+    font-size:8px;
+    margin-top:15px;
+  }
+  .name{
+    font-size: smaller;
+    padding-top:10px;
+  }
+  .quote{
+    font-weight: 300;
+    font-size:12px;
+    padding:0 5px;
+    line-height: 20px;
   }
 }
